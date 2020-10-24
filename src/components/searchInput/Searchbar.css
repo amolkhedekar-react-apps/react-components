@@ -1,0 +1,124 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todo__container {
+  width: 100%;
+  border-radius: 8px;
+  background: #664aff;
+}
+.todo__container p {
+  text-align: center;
+  color: antiquewhite;
+  font-size: 25px;
+  margin-top: 50px;
+}
+.todo__row {
+  text-align: center;
+  margin: 10px;
+  display: flex;
+}
+.todo__divInput {
+  display: flex;
+  height: 50px;
+  background: #664aff;
+  border-radius: 8px;
+  width: 60px;
+  animation: slide 3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+.todo__divInput.active {
+  display: flex;
+  height: 50px;
+  background: aliceblue;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.btn--search {
+  height: 80%;
+  align-self: center;
+  transform: translateX(-50%);
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #664aff;
+  border: 1px solid #664aff;
+  border-radius: 8px;
+  color: aliceblue;
+  font-size: large;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px #ccc;
+  border: 2px solid aliceblue;
+}
+
+.btn--search.active {
+  height: 80%;
+  align-self: center;
+  transform: translateX(0);
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #664aff;
+  border: 1px solid #664aff;
+  border-radius: 8px;
+  color: aliceblue;
+  font-size: large;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.btn--search:active {
+  transform: scale(0.8);
+}
+.btn--close {
+  height: 40px;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-self: center;
+  background-color: #664aff;
+  border: 1px solid #664aff;
+  border-radius: 8px;
+  color: aliceblue;
+  font-size: large;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.todo__input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px 0 20px;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.todo__input:focus {
+  border: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+@media screen and (max-width: 640px) {
+  .todo__container {
+    width: 100%;
+    background: #664aff;
+  }
+  .todo__divInput {
+    display: flex;
+    height: 60px;
+    background: transparent;
+    border-radius: 8px;
+  }
+}
